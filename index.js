@@ -13,7 +13,7 @@ app.post('/webhook', (req, res) => {
 });
 
 const getWeatherForecast = async (city, startDate, endDate, res) => {
-  const apiKey = '2efa806c7445c85a7d7c82542d188a67';
+  const apiKey = '';
   const geocodeUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`;
 
   try {
